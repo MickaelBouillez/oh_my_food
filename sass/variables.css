@@ -1,0 +1,49 @@
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+.location p {
+  font-family: "Roboto";
+}
+
+.presentation {
+  font-family: "Roboto";
+}
+.presentation p {
+  font-weight: lighter;
+  color: rgb(88, 88, 88);
+}
+
+.functioning h2 {
+  font-family: "Roboto";
+}
+.functioning p {
+  font-family: "Roboto";
+}
+.functioning i {
+  color: rgb(88, 88, 88);
+}
+.functioning__list--btn span {
+  color: white;
+}
+
+.restaurants h2 {
+  font-family: "Roboto";
+}
+.restaurants__cards {
+  font-family: "Roboto";
+}
+.restaurants__cards a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants__cards span {
+  color: #2c7965;
+}
+.restaurants__card--content h3 {
+  font-family: "Roboto";
+}
+.restaurants__card--content p {
+  font-weight: lighter;
+  color: rgb(88, 88, 88);
+}

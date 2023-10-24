@@ -1,12 +1,108 @@
+@import 'variables';
+
+body{
+    margin: 0px;
+}
 .header__logo{
     display: flex;
     justify-content: center;
 }
 
-
-.location {
+.location{
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color:$bg-color1;
     align-items: center;
+    padding: 1rem 0rem;
+
+    .fa-location-dot {
+        padding: 0rem 0.5rem;
+    }
+    &__text{
+        margin: 0rem;
+    }
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:$bg-color2;
+    padding: 2rem 0rem;
+
+    h2{
+        margin: 1rem 0rem 0rem 0rem
+    }
+    p{
+        margin: 1rem 0rem 1.5rem 0rem;
+    }
+    &__btn {
+        color: white;
+        padding: 1rem 2rem;
+        text-align: center;
+        background: linear-gradient($second-color,$primary-color);
+        border-radius: 30px;
+      }
+}
+
+.functioning{
+    margin: 2rem 0rem;
+
+    h2{
+        margin-left: 0.5rem;
+    }
+
+    &__list--btn{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        background-color: $bg-color2;
+        align-items: center;
+        border-radius: 30px;
+        margin: 1rem 0rem;
+        padding: 0.5rem 0rem;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary-color;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+
+        i{
+            margin-right: 1rem;
+        }
+
+        .fa-sharp.fa-solid.fa-store {
+            color:$primary-color;
+          }
+    }
+}
+
+.restaurants{
+    margin: 2rem 0rem;
+
+    h2{
+        margin-left: 0.5rem;
+    }
+
+    &__cards{
+        width: 90%;
+    }
+   .restaurants__card{
+    margin: 0.5rem 0.5rem;
+    
+        & img{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+    }
+
+    }
 }

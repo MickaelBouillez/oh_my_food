@@ -1,0 +1,196 @@
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+.location p {
+  font-family: "Roboto";
+}
+
+.presentation {
+  font-family: "Roboto";
+}
+.presentation p {
+  font-weight: lighter;
+  color: rgb(88, 88, 88);
+}
+
+.functioning h2 {
+  font-family: "Roboto";
+}
+.functioning p {
+  font-family: "Roboto";
+}
+.functioning i {
+  color: rgb(88, 88, 88);
+}
+.functioning__list--btn span {
+  color: white;
+}
+
+.restaurants h2 {
+  font-family: "Roboto";
+}
+.restaurants__cards {
+  font-family: "Roboto";
+}
+.restaurants__cards a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants__cards span {
+  color: #2c7965;
+}
+.restaurants__card--content h3 {
+  font-family: "Roboto";
+}
+.restaurants__card--content p {
+  font-weight: lighter;
+  color: rgb(88, 88, 88);
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+.location p {
+  font-family: "Roboto";
+}
+
+.presentation {
+  font-family: "Roboto";
+}
+.presentation p {
+  font-weight: lighter;
+  color: rgb(88, 88, 88);
+}
+
+.functioning h2 {
+  font-family: "Roboto";
+}
+.functioning p {
+  font-family: "Roboto";
+}
+.functioning i {
+  color: rgb(88, 88, 88);
+}
+.functioning__list--btn span {
+  color: white;
+}
+
+.restaurants h2 {
+  font-family: "Roboto";
+}
+.restaurants__cards {
+  font-family: "Roboto";
+}
+.restaurants__cards a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants__cards span {
+  color: #2c7965;
+}
+.restaurants__card--content h3 {
+  font-family: "Roboto";
+}
+.restaurants__card--content p {
+  font-weight: lighter;
+  color: rgb(88, 88, 88);
+}
+
+body {
+  margin: 0px;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f1;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.location .fa-location-dot {
+  padding: 0rem 0.5rem;
+}
+.location__text {
+  margin: 0rem;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 2rem 0rem;
+}
+.presentation h2 {
+  margin: 1rem 0rem 0rem 0rem;
+}
+.presentation p {
+  margin: 1rem 0rem 1.5rem 0rem;
+}
+.presentation__btn {
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px;
+}
+
+.functioning {
+  margin: 2rem 0rem;
+}
+.functioning h2 {
+  margin-left: 0.5rem;
+}
+.functioning__list--btn {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f9f9;
+  align-items: center;
+  border-radius: 30px;
+  margin: 1rem 0rem;
+  padding: 0.5rem 0rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.functioning__list--btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+.functioning__list--btn i {
+  margin-right: 1rem;
+}
+.functioning__list--btn .fa-sharp.fa-solid.fa-store {
+  color: #9356DC;
+}
+
+.restaurants {
+  margin: 2rem 0rem;
+}
+.restaurants h2 {
+  margin-left: 0.5rem;
+}
+.restaurants__cards {
+  width: 90%;
+}
+.restaurants .restaurants__card {
+  margin: 0.5rem 0.5rem;
+}
+.restaurants .restaurants__card img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
