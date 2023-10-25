@@ -3,8 +3,9 @@
 $primary-color: #9356DC;
 $second-color: #FF79DA;
 $third-color: #99E2D0;
-$bg-color1:  #f1f1f1;
+$bg-color1: #f1f1f1;
 $bg-color2: #f9f9f9;
+$bg-color3: #2b2b2b;
 $span-color: #2c7965;
 
 h1 {
@@ -17,57 +18,86 @@ h1 {
 
 .presentation {
     font-family: "Roboto";
+    font-size: 17px;
 
-    p{
-    font-weight: lighter;
-    color: rgb(88, 88, 88);
+    p {
+        font-weight: lighter;
+        color: rgb(88, 88, 88);
     }
 
 }
 
-.functioning{
-    h2{
+.functioning {
+    h2 {
         font-family: "Roboto";
     }
 
-    p{
+    p {
         font-family: "Roboto";
 
     }
-    i{
+
+    i {
         color: rgb(88, 88, 88);
     }
-    &__list--btn{
-        span{
+
+    &__list--btn {
+        span {
             color: white;
         }
     }
 }
 
-.restaurants{
+.restaurants {
 
-    h2{
+    h2 {
         font-family: "Roboto";
     }
 
-    &__cards{
+    &__cards {
         font-family: "Roboto";
-        a{
+
+        a {
             text-decoration: none;
             color: black;
         }
-        span{
-        color: $span-color;
+
+        span {
+            color: $span-color;
         }
     }
 
-    &__card--content{
-        h3{
+    &__card--content {
+        h3 {
             font-family: "Roboto";
+            font-size: 17px;
         }
-        p{
+
+        p {
             font-weight: lighter;
             color: rgb(88, 88, 88);
+            font-size: 16px;
         }
+    }
+}
+
+footer {
+    .footer__logo {
+        font-family: "Shrikhand", cursive;
+        font-size: 15px;
+        color: white;
+    }
+
+    .footer__choice {
+        color: white;
+        font-family: "Roboto";
+        font-size: 12px;
+    }
+
+    .footer__list {
+        a {
+            color: white;
+        }
+
     }
 }

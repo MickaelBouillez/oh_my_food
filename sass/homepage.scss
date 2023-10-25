@@ -1,59 +1,63 @@
 @import 'variables';
 
-body{
+body {
     margin: 0px;
 }
-.header__logo{
+
+.header__logo {
     display: flex;
     justify-content: center;
 }
 
-.location{
+.location {
     display: flex;
     justify-content: center;
-    background-color:$bg-color1;
+    background-color: $bg-color1;
     align-items: center;
     padding: 1rem 0rem;
 
     .fa-location-dot {
         padding: 0rem 0.5rem;
     }
-    &__text{
+
+    &__text {
         margin: 0rem;
     }
 }
 
-.presentation{
+.presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color:$bg-color2;
+    background-color: $bg-color2;
     padding: 2rem 0rem;
 
-    h2{
-        margin: 1rem 0rem 0rem 0rem
+    h2 {
+        margin: 0rem 0rem 0rem 0rem
     }
-    p{
+
+    p {
         margin: 1rem 0rem 1.5rem 0rem;
     }
+
     &__btn {
         color: white;
         padding: 1rem 2rem;
         text-align: center;
-        background: linear-gradient($second-color,$primary-color);
+        background: linear-gradient($second-color, $primary-color);
         border-radius: 30px;
-      }
+    }
 }
 
-.functioning{
+.functioning {
     margin: 2rem 0rem;
 
-    h2{
+    h2 {
         margin-left: 0.5rem;
     }
 
-    &__list--btn{
+    &__list--btn {
         width: 90%;
         display: flex;
         flex-direction: row;
@@ -63,8 +67,8 @@ body{
         margin: 1rem 0rem;
         padding: 0.5rem 0rem;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-        
-        span{
+
+        span {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -75,34 +79,109 @@ body{
             transform: translateX(-50%);
         }
 
-        i{
+        i {
             margin-right: 1rem;
         }
 
         .fa-sharp.fa-solid.fa-store {
-            color:$primary-color;
-          }
+            color: $primary-color;
+        }
     }
 }
 
-.restaurants{
-    margin: 2rem 0rem;
+.restaurants {
 
-    h2{
+    margin: 2rem 0rem;
+    height: 50%;
+
+    h2 {
         margin-left: 0.5rem;
     }
 
-    &__cards{
-        width: 90%;
-    }
-   .restaurants__card{
-    margin: 0.5rem 0.5rem;
-    
-        & img{
-            width: 100%;
-            height: auto;
-            overflow: hidden;
+    &__cards {
+        width: 100%;
+
+        a {
+            cursor: pointer;
+
+            .restaurants__card {
+                display: flex;
+                flex-direction: column;
+                margin: 1.5rem 1rem;
+                width: 90%;
+                height: 250px;
+                background-color: white;
+                border-radius: 10px;
+                filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+                & img {
+                    display: flex;
+                    width: 100%;
+                    height: 180px;
+                    overflow: hidden;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px 10px 0px 0px;
+                }
+
+                & .new {
+                    background-color: $third-color;
+                    width: 80px;
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    right: 15px;
+                    top: 20px;
+                    padding: 3px;
+                }
+
+                &--content {
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem 0rem 0.5rem;
+
+                    h3 {
+                        margin: 0px;
+                        padding-bottom: 5px;
+                    }
+
+                    p {
+                        margin: 0px;
+                    }
+                }
+            }
+        }
     }
 
+
+}
+
+footer {
+    background-color: $bg-color3;
+    padding: 0.5rem 0rem;
+
+    .footer__logo {
+        margin: 0.5rem 1rem;
+    }
+
+    .footer__choice {
+        margin: 0px;
+        padding: 0.5rem 1rem;
+        list-style-type: none;
+
+        .footer__list {
+            margin: 3px 0px;
+
+            i {
+                margin-right: 5px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
     }
 }
