@@ -1,5 +1,10 @@
 h1 {
   font-family: "Shrikhand", cursive;
+  font-size: 27px;
+}
+
+.fa-xl {
+  color: #585858;
 }
 
 .location p {
@@ -22,7 +27,7 @@ h1 {
   font-family: "Roboto";
 }
 .functioning i {
-  color: rgb(88, 88, 88);
+  color: #585858;
 }
 .functioning__list--btn span {
   color: white;
@@ -63,4 +68,32 @@ footer .footer__choice {
 }
 footer .footer__list a {
   color: white;
+}
+
+/*Restaurant page*/
+.restaurant__main {
+  background-color: #f1f1f1;
+}
+.restaurant__main .head__restaurant {
+  background-color: #f1f1f1;
+}
+
+.menu__list h4 {
+  font-family: "Roboto";
+  color: #585858;
+  font-weight: lighter;
+}
+.menu__list .menu_cards--title {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+}
+.menu__list .menu_cards--subtitle .cards__subtitle {
+  font-family: "Roboto";
+  color: #585858;
+  font-weight: normal;
+  font-size: 15px;
+}
+.menu__list .menu_cards--subtitle .cards__price {
+  color: black;
 }

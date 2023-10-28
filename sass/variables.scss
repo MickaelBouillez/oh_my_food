@@ -3,6 +3,7 @@
 $primary-color: #9356DC;
 $second-color: #FF79DA;
 $third-color: #99E2D0;
+$forth-color: #585858;
 $bg-color1: #f1f1f1;
 $bg-color2: #f9f9f9;
 $bg-color3: #2b2b2b;
@@ -10,6 +11,11 @@ $span-color: #2c7965;
 
 h1 {
     font-family: "Shrikhand", cursive;
+    font-size: 27px;
+}
+
+.fa-xl {
+    color: $forth-color;
 }
 
 .location p {
@@ -38,7 +44,7 @@ h1 {
     }
 
     i {
-        color: rgb(88, 88, 88);
+        color: $forth-color;
     }
 
     &__list--btn {
@@ -79,6 +85,7 @@ h1 {
             font-size: 16px;
         }
     }
+
 }
 
 footer {
@@ -99,5 +106,43 @@ footer {
             color: white;
         }
 
+    }
+}
+
+/*Restaurant page*/
+
+.restaurant__main {
+    background-color: $bg-color1;
+
+    .head__restaurant {
+        background-color: $bg-color1;
+    }
+}
+
+.menu__list {
+    h4 {
+        font-family: "Roboto";
+        color: $forth-color;
+        font-weight: lighter;
+    }
+
+    & .menu_cards--title {
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    & .menu_cards--subtitle {
+
+        & .cards__subtitle {
+            font-family: "Roboto";
+            color: $forth-color;
+            font-weight: normal;
+            font-size: 15px;
+        }
+
+        & .cards__price {
+            color: black;
+        }
     }
 }

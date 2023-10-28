@@ -1,5 +1,6 @@
 h1 {
   font-family: "Shrikhand", cursive;
+  font-size: 27px;
 }
 
 .location p {
@@ -65,6 +66,14 @@ footer .footer__list a {
   color: white;
 }
 
+/*Restaurant page*/
+.restaurant__main {
+  background-color: #f1f1f1;
+}
+.restaurant__main .head__restaurant {
+  background-color: #f1f1f1;
+}
+
 body {
   margin: 0px;
 }
@@ -72,6 +81,7 @@ body {
 .header__logo {
   display: flex;
   justify-content: center;
+  margin: 1rem 0rem;
 }
 
 .location {
