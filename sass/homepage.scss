@@ -84,7 +84,15 @@ body {
             margin-right: 1rem;
         }
 
-        .fa-sharp.fa-solid.fa-store {
+        .fa-solid.fa-mobile-screen-button:hover {
+            color: $primary-color;
+        }
+
+        .fa-solid.fa-list:hover {
+            color: $primary-color;
+        }
+
+        .fa-sharp.fa-solid.fa-store:hover {
             color: $primary-color;
         }
     }
@@ -123,6 +131,7 @@ body {
                     justify-content: center;
                     align-items: center;
                     border-radius: 10px 10px 0px 0px;
+                    object-fit: cover;
                 }
 
                 & .new {
@@ -153,11 +162,23 @@ body {
                         margin: 0px;
                     }
                 }
+
+                .fa-regular.fa-heart.fa-xl:active {
+                    font-weight: 900;
+                }
+
+                .card__content--icon {
+                    padding: 1px;
+                }
+
+                .card__content--icon:active {
+                    background-image: linear-gradient($second-color, $primary-color);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
             }
         }
     }
-
-
 }
 
 footer {

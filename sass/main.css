@@ -3,10 +3,6 @@ h1 {
   font-size: 27px;
 }
 
-.fa-xl {
-  color: #585858;
-}
-
 .location p {
   font-family: "Roboto";
 }
@@ -101,10 +97,6 @@ footer .footer__list a {
 h1 {
   font-family: "Shrikhand", cursive;
   font-size: 27px;
-}
-
-.fa-xl {
-  color: #585858;
 }
 
 .location p {
@@ -274,7 +266,13 @@ body {
 .functioning__list--btn i {
   margin-right: 1rem;
 }
-.functioning__list--btn .fa-sharp.fa-solid.fa-store {
+.functioning__list--btn .fa-solid.fa-mobile-screen-button:hover {
+  color: #9356DC;
+}
+.functioning__list--btn .fa-solid.fa-list:hover {
+  color: #9356DC;
+}
+.functioning__list--btn .fa-sharp.fa-solid.fa-store:hover {
   color: #9356DC;
 }
 
@@ -309,6 +307,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
 }
 .restaurants__cards a .restaurants__card .new {
   background-color: #99E2D0;
@@ -333,6 +332,17 @@ body {
 }
 .restaurants__cards a .restaurants__card--content p {
   margin: 0px;
+}
+.restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:active {
+  font-weight: 900;
+}
+.restaurants__cards a .restaurants__card .card__content--icon {
+  padding: 1px;
+}
+.restaurants__cards a .restaurants__card .card__content--icon:active {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 footer {
@@ -360,10 +370,6 @@ footer .footer__choice .footer__list a {
 h1 {
   font-family: "Shrikhand", cursive;
   font-size: 27px;
-}
-
-.fa-xl {
-  color: #585858;
 }
 
 .location p {
@@ -482,6 +488,7 @@ body {
   overflow: hidden;
   position: relative;
   z-index: 1;
+  object-fit: cover;
 }
 
 .head__restaurant {
@@ -493,6 +500,17 @@ body {
   position: relative;
   bottom: 25px;
   z-index: 2;
+}
+.head__restaurant .restaurants__icon {
+  padding: 2px;
+}
+.head__restaurant .restaurants__icon:active {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.head__restaurant .fa-regular.fa-heart.fa-xl:active {
+  font-weight: 900;
 }
 
 .menu {

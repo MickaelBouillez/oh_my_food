@@ -23,7 +23,7 @@ h1 {
   font-family: "Roboto";
 }
 .functioning i {
-  color: rgb(88, 88, 88);
+  color: #585858;
 }
 .functioning__list--btn span {
   color: white;
@@ -72,6 +72,26 @@ footer .footer__list a {
 }
 .restaurant__main .head__restaurant {
   background-color: #f1f1f1;
+}
+
+.menu__list h4 {
+  font-family: "Roboto";
+  color: #585858;
+  font-weight: lighter;
+}
+.menu__list .menu_cards--title {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+}
+.menu__list .menu_cards--subtitle .cards__subtitle {
+  font-family: "Roboto";
+  color: #585858;
+  font-weight: normal;
+  font-size: 15px;
+}
+.menu__list .menu_cards--subtitle .cards__price {
+  color: black;
 }
 
 body {
@@ -150,7 +170,13 @@ body {
 .functioning__list--btn i {
   margin-right: 1rem;
 }
-.functioning__list--btn .fa-sharp.fa-solid.fa-store {
+.functioning__list--btn .fa-solid.fa-mobile-screen-button:hover {
+  color: #9356DC;
+}
+.functioning__list--btn .fa-solid.fa-list:hover {
+  color: #9356DC;
+}
+.functioning__list--btn .fa-sharp.fa-solid.fa-store:hover {
   color: #9356DC;
 }
 
@@ -185,6 +211,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
 }
 .restaurants__cards a .restaurants__card .new {
   background-color: #99E2D0;
@@ -209,6 +236,17 @@ body {
 }
 .restaurants__cards a .restaurants__card--content p {
   margin: 0px;
+}
+.restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:active {
+  font-weight: 900;
+}
+.restaurants__cards a .restaurants__card .card__content--icon {
+  padding: 1px;
+}
+.restaurants__cards a .restaurants__card .card__content--icon:active {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 footer {

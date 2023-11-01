@@ -27,6 +27,7 @@ body {
     overflow: hidden;
     position: relative;
     z-index: 1;
+    object-fit: cover;
 }
 
 .head__restaurant {
@@ -38,6 +39,21 @@ body {
     position: relative;
     bottom: 25px;
     z-index: 2;
+
+    .restaurants__icon {
+        padding: 2px;
+    }
+
+    .restaurants__icon:active {
+        background-image: linear-gradient($second-color, $primary-color);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .fa-regular.fa-heart.fa-xl:active {
+        font-weight: 900;
+    }
+
 }
 
 .menu {
