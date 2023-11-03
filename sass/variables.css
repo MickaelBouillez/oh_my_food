@@ -67,10 +67,10 @@ footer .footer__list a {
 }
 
 /*Restaurant page*/
-.restaurant__main {
+.restaurant__page .restaurant__main {
   background-color: #f1f1f1;
 }
-.restaurant__main .head__restaurant {
+.restaurant__page .restaurant__main .head__restaurant {
   background-color: #f1f1f1;
 }
 

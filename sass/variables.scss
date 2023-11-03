@@ -107,11 +107,13 @@ footer {
 
 /*Restaurant page*/
 
-.restaurant__main {
-    background-color: $bg-color1;
-
-    .head__restaurant {
+.restaurant__page {
+    & .restaurant__main {
         background-color: $bg-color1;
+
+        & .head__restaurant {
+            background-color: $bg-color1;
+        }
     }
 }
 
