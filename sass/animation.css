@@ -96,3 +96,69 @@ footer .footer__list a {
 .menu__list .menu_cards--subtitle .cards__price {
   color: black;
 }
+
+.presentation__btn {
+  transition: 0.3s;
+}
+
+.presentation__btn:hover {
+  transform: scale(1.2);
+}
+
+.functioning__list--btn {
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.functioning__list--btn:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.1);
+}
+
+.restaurants__card {
+  transition: 0.3s;
+}
+
+.restaurants__card:hover {
+  transform: scale(1.05);
+}
+
+.card__content--icon:hover {
+  animation: fadeIn 0.2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu {
+  animation: appear 1s forwards;
+  opacity: 0;
+}
+
+.menu:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.menu:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.menu:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

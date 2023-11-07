@@ -69,7 +69,14 @@ body {
     margin: 2rem 0rem;
 
     @media (min-width : 1024px) {
-        margin: 2rem 15rem;
+        margin: 2rem 3rem;
+    }
+
+
+    & .container__1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     h2 {
@@ -84,7 +91,7 @@ body {
             padding-left: 0px;
         }
 
-        @media (min-width: 768px) and (max-width: 1024px) {
+        @media (min-width: 768px) {
             display: flex;
             justify-content: space-around;
             padding-left: 0px;
@@ -146,8 +153,19 @@ body {
     height: 50%;
 
     @media (min-width : 1024px) {
-        margin: 2rem 15rem;
+        margin: 2rem 3rem;
     }
+
+    & .container__2 {
+        @media (min-width : 1024px) {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+    }
+
+
 
     h2 {
         margin-left: 0.5rem;
@@ -241,12 +259,22 @@ body {
                     }
                 }
 
+                .fa-regular.fa-heart.fa-xl:hover {
+                    font-weight: 900;
+                }
+
                 .fa-regular.fa-heart.fa-xl:active {
                     font-weight: 900;
                 }
 
                 .card__content--icon {
                     padding: 1px;
+                }
+
+                .card__content--icon:hover {
+                    background-image: linear-gradient($second-color, $primary-color);
+                    -webkit-background-clip: text;
+                    color: transparent;
                 }
 
                 .card__content--icon:active {
@@ -275,10 +303,12 @@ footer {
 
     .container {
         @media (min-width : 1024px) {
-            width: 70%;
+            width: 100%;
             display: flex;
             flex-direction: row-reverse;
             padding: 3rem 3rem 1rem 1rem;
+            max-width: 1440px;
+            margin: 0 auto;
         }
 
         @media (min-width: 768px) and (max-width: 1024px) {

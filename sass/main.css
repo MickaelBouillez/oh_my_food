@@ -25,6 +25,9 @@ h1 {
 .functioning i {
   color: #585858;
 }
+.functioning__list--btn {
+  background-color: #f1f1f1;
+}
 .functioning__list--btn span {
   color: white;
 }
@@ -120,6 +123,9 @@ h1 {
 }
 .functioning i {
   color: #585858;
+}
+.functioning__list--btn {
+  background-color: #f1f1f1;
 }
 .functioning__list--btn span {
   color: white;
@@ -257,8 +263,13 @@ body {
 }
 @media (min-width: 1024px) {
   .functioning {
-    margin: 2rem 15rem;
+    margin: 2rem 3rem;
   }
+}
+.functioning .container__1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .functioning h2 {
   margin-left: 0.5rem;
@@ -270,7 +281,7 @@ body {
     padding-left: 0px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .functioning__list {
     display: flex;
     justify-content: space-around;
@@ -328,7 +339,14 @@ body {
 }
 @media (min-width: 1024px) {
   .restaurants {
-    margin: 2rem 15rem;
+    margin: 2rem 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants .container__2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 .restaurants h2 {
@@ -422,11 +440,19 @@ body {
 .restaurants__cards a .restaurants__card--content p {
   margin: 0px;
 }
+.restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:hover {
+  font-weight: 900;
+}
 .restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:active {
   font-weight: 900;
 }
 .restaurants__cards a .restaurants__card .card__content--icon {
   padding: 1px;
+}
+.restaurants__cards a .restaurants__card .card__content--icon:hover {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .restaurants__cards a .restaurants__card .card__content--icon:active {
   background-image: linear-gradient(#FF79DA, #9356DC);
@@ -452,10 +478,12 @@ footer {
 }
 @media (min-width: 1024px) {
   footer .container {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     padding: 3rem 3rem 1rem 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -524,6 +552,9 @@ h1 {
 }
 .functioning i {
   color: #585858;
+}
+.functioning__list--btn {
+  background-color: #f1f1f1;
 }
 .functioning__list--btn span {
   color: white;
@@ -608,6 +639,8 @@ body {
 @media (min-width: 1024px) {
   .logo_and_back {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -647,6 +680,13 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .image {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 .img_restaurant {
   width: 100%;
   height: 255px;
@@ -670,6 +710,8 @@ body {
   .restaurant__page {
     display: flex;
     justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -814,4 +856,169 @@ body {
   text-align: center;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 27px;
+}
+
+.location p {
+  font-family: "Roboto";
+}
+
+.presentation {
+  font-family: "Roboto";
+  font-size: 17px;
+}
+.presentation p {
+  font-weight: lighter;
+  color: rgb(88, 88, 88);
+}
+
+.functioning h2 {
+  font-family: "Roboto";
+}
+.functioning p {
+  font-family: "Roboto";
+}
+.functioning i {
+  color: #585858;
+}
+.functioning__list--btn {
+  background-color: #f1f1f1;
+}
+.functioning__list--btn span {
+  color: white;
+}
+
+.restaurants h2 {
+  font-family: "Roboto";
+}
+.restaurants__cards {
+  font-family: "Roboto";
+}
+.restaurants__cards a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants__cards span {
+  color: #2c7965;
+}
+.restaurants__card--content h3 {
+  font-family: "Roboto";
+  font-size: 17px;
+}
+.restaurants__card--content p {
+  font-weight: lighter;
+  color: rgb(88, 88, 88);
+  font-size: 16px;
+}
+
+footer .footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 15px;
+  color: white;
+}
+footer .footer__choice {
+  color: white;
+  font-family: "Roboto";
+  font-size: 12px;
+}
+footer .footer__list a {
+  color: white;
+}
+
+/*Restaurant page*/
+.restaurant__page .restaurant__main {
+  background-color: #f1f1f1;
+}
+.restaurant__page .restaurant__main .head__restaurant {
+  background-color: #f1f1f1;
+}
+
+.menu__list h4 {
+  font-family: "Roboto";
+  color: #585858;
+  font-weight: lighter;
+}
+.menu__list .menu_cards--title {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+}
+.menu__list .menu_cards--subtitle .cards__subtitle {
+  font-family: "Roboto";
+  color: #585858;
+  font-weight: normal;
+  font-size: 15px;
+}
+.menu__list .menu_cards--subtitle .cards__price {
+  color: black;
+}
+
+.presentation__btn {
+  transition: 0.3s;
+}
+
+.presentation__btn:hover {
+  transform: scale(1.2);
+}
+
+.functioning__list--btn {
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.functioning__list--btn:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.1);
+}
+
+.restaurants__card {
+  transition: 0.3s;
+}
+
+.restaurants__card:hover {
+  transform: scale(1.05);
+}
+
+.card__content--icon:hover {
+  animation: fadeIn 0.2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu {
+  animation: appear 1s forwards;
+  opacity: 0;
+}
+
+.menu:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.menu:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.menu:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

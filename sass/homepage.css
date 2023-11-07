@@ -25,6 +25,9 @@ h1 {
 .functioning i {
   color: #585858;
 }
+.functioning__list--btn {
+  background-color: #f1f1f1;
+}
 .functioning__list--btn span {
   color: white;
 }
@@ -161,8 +164,13 @@ body {
 }
 @media (min-width: 1024px) {
   .functioning {
-    margin: 2rem 15rem;
+    margin: 2rem 3rem;
   }
+}
+.functioning .container__1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .functioning h2 {
   margin-left: 0.5rem;
@@ -174,7 +182,7 @@ body {
     padding-left: 0px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .functioning__list {
     display: flex;
     justify-content: space-around;
@@ -232,7 +240,14 @@ body {
 }
 @media (min-width: 1024px) {
   .restaurants {
-    margin: 2rem 15rem;
+    margin: 2rem 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants .container__2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 .restaurants h2 {
@@ -326,11 +341,19 @@ body {
 .restaurants__cards a .restaurants__card--content p {
   margin: 0px;
 }
+.restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:hover {
+  font-weight: 900;
+}
 .restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:active {
   font-weight: 900;
 }
 .restaurants__cards a .restaurants__card .card__content--icon {
   padding: 1px;
+}
+.restaurants__cards a .restaurants__card .card__content--icon:hover {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .restaurants__cards a .restaurants__card .card__content--icon:active {
   background-image: linear-gradient(#FF79DA, #9356DC);
@@ -356,10 +379,12 @@ footer {
 }
 @media (min-width: 1024px) {
   footer .container {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     padding: 3rem 3rem 1rem 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
