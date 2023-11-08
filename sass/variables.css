@@ -7,6 +7,12 @@ h1 {
   font-family: "Roboto";
 }
 
+input::placeholder {
+  color: black;
+  font-family: "Roboto";
+  font-size: 17px;
+}
+
 .presentation {
   font-family: "Roboto";
   font-size: 17px;

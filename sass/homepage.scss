@@ -32,7 +32,15 @@ body {
 
     &__text {
         margin: 0rem;
+
     }
+
+
+    input[type="text"] {
+        border: none;
+        background-color: $bg-color1;
+    }
+
 }
 
 .presentation {

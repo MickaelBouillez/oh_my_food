@@ -7,6 +7,12 @@ h1 {
   font-family: "Roboto";
 }
 
+input::placeholder {
+  color: black;
+  font-family: "Roboto";
+  font-size: 17px;
+}
+
 .presentation {
   font-family: "Roboto";
   font-size: 17px;
@@ -104,6 +110,12 @@ h1 {
 
 .location p {
   font-family: "Roboto";
+}
+
+input::placeholder {
+  color: black;
+  font-family: "Roboto";
+  font-size: 17px;
 }
 
 .presentation {
@@ -228,6 +240,10 @@ body {
 }
 .location__text {
   margin: 0rem;
+}
+.location input[type=text] {
+  border: none;
+  background-color: #f1f1f1;
 }
 
 .presentation {
@@ -533,6 +549,12 @@ h1 {
 
 .location p {
   font-family: "Roboto";
+}
+
+input::placeholder {
+  color: black;
+  font-family: "Roboto";
+  font-size: 17px;
 }
 
 .presentation {
@@ -843,6 +865,17 @@ body {
   margin-bottom: 0rem;
   padding-right: 1rem;
 }
+.restaurant__page .menu__list .menu_cards .menucheck {
+  background: #99e2d0;
+  cursor: pointer;
+  height: auto;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .restaurant__page .nav-bar__button {
   text-decoration: none;
   display: flex;
@@ -865,6 +898,12 @@ h1 {
 
 .location p {
   font-family: "Roboto";
+}
+
+input::placeholder {
+  color: black;
+  font-family: "Roboto";
+  font-size: 17px;
 }
 
 .presentation {
@@ -959,10 +998,12 @@ footer .footer__list a {
 
 .presentation__btn {
   transition: 0.3s;
+  opacity: 0.9;
 }
 
 .presentation__btn:hover {
   transform: scale(1.2);
+  opacity: 1;
 }
 
 .functioning__list--btn {
@@ -976,6 +1017,7 @@ footer .footer__list a {
 
 .restaurants__card {
   transition: 0.3s;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .restaurants__card:hover {
@@ -995,30 +1037,37 @@ footer .footer__list a {
     opacity: 1;
   }
 }
-.menu {
+.box {
   animation: appear 1s forwards;
   opacity: 0;
 }
 
-.menu:nth-child(1) {
-  animation-delay: 0s;
+.first {
+  animation-delay: 0.5s;
 }
 
-.menu:nth-child(2) {
+.second {
   animation-delay: 1s;
 }
 
-.menu:nth-child(3) {
-  animation-delay: 2s;
+.third {
+  animation-delay: 1.5s;
 }
 
 @keyframes appear {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
+  to {
     opacity: 1;
-    transform: translateY(0);
   }
+}
+.menu_cards:hover {
+  margin-right: 7rem;
+}
+
+.menucheck {
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.menucheck:hover {
+  opacity: 100%;
+  width: 7rem;
 }
