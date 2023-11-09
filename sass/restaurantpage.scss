@@ -141,13 +141,13 @@ body {
             }
         }
 
-        .restaurants__icon:active {
+        .restaurants__icon {
             background-image: linear-gradient($second-color, $primary-color);
             -webkit-background-clip: text;
             color: transparent;
         }
 
-        .fa-regular.fa-heart.fa-xl:active {
+        .fa-regular.fa-heart.fa-xl {
             font-weight: 900;
         }
 
@@ -184,12 +184,17 @@ body {
         }
 
         & .menu_cards {
+            display: flex;
             border: none;
             background-color: $bg-color2;
             width: 95%;
             border-radius: 15px;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
             margin: 0.5rem 0rem;
+
+            & .menu_cards--content {
+                width: 100%;
+            }
 
             &--title {
                 padding-left: 1rem;
@@ -222,11 +227,10 @@ body {
             }
 
             & .menucheck {
-                background: #99e2d0;
+                background-color: #99e2d0;
+                color: $bg-color1;
                 cursor: pointer;
                 height: auto;
-                width: 0;
-                opacity: 0;
                 border-radius: 0 15px 15px 0;
                 display: flex;
                 align-items: center;

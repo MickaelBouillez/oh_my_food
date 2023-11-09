@@ -13,16 +13,19 @@
 </head>
 
 <body>
+    <div class="loader">
+        <div class="loader__content"></div>
+    </div>
     <header>
         <h1 class="header__logo">ohmyfood</h1>
     </header>
     <main>
-        <section class="location">
+        <div class="location">
             <i class="fa-solid fa-location-dot"></i>
             <form class="location__text" method="get">
                 <input type="text" name="search" id="search" placeholder="Paris, Belleville">
             </form>
-        </section>
+        </div>
         <section class="presentation">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
@@ -54,9 +57,9 @@
             <div class="container__2">
                 <h2 class="restaurants__title">Restaurants</h2>
                 <div class="restaurants__cards">
-                    <a href="La_palette_du_goût.html" alt="La_palette_du_goût">
+                    <a href="La_palette_du_goût.html" rel="La_palette_du_goût">
                         <div class="restaurants__card">
-                            <img src="assets/images/restaurants/La palette du goût.jpg" alt="La palette du goût">
+                            <img src="assets/images/restaurants/La_palette_du_goût.jpg" alt="La palette du goût">
                             <span class="new">Nouveau</span>
                             <div class="restaurants__card--content">
                                 <div class="card__content--text">
@@ -69,9 +72,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="La_note_enchantée.html" alt="OhMyFood_LaNoteEnchantée">
+                    <a href="La_note_enchantée.html" rel="OhMyFood_LaNoteEnchantée">
                         <div class="restaurants__card">
-                            <img src="assets/images/restaurants/La note enchantée.jpg" alt="La note enchantée">
+                            <img src="assets/images/restaurants/La_note_enchantée.jpg" alt="La note enchantée">
                             <span class="new">Nouveau</span>
                             <div class="restaurants__card--content">
                                 <div class="card__content--text">
@@ -84,9 +87,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="À_la_française.html" alt="OhMyFood_A_la_francaise">
+                    <a href="À_la_française.html" rel="OhMyFood_A_la_francaise">
                         <div class="restaurants__card">
-                            <img src="assets/images/restaurants/A la francaise.jpg" alt="A la française">
+                            <img src="assets/images/restaurants/A_la_francaise.jpg" alt="A la française">
                             <div class="restaurants__card--content">
                                 <div class="card__content--text">
                                     <h3>A la française</h3>
@@ -98,9 +101,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="Le_délice_des_sens.html" alt="OhMyFood_LeDélicedesSens">
+                    <a href="Le_délice_des_sens.html" rel="OhMyFood_LeDélicedesSens">
                         <div class="restaurants__card">
-                            <img src="assets/images/restaurants/Le délice des sens.jpg" alt="Le délice des sens">
+                            <img src="assets/images/restaurants/Le_délice_des_sens.jpg" alt="Le délice des sens">
                             <div class="restaurants__card--content">
                                 <div class="card__content--text">
                                     <h3>Le délice des sens</h3>
@@ -132,6 +135,7 @@
                 <li class="footer__list">
                     <a href="mailto:contact@ofmyfood.com">Contact</a>
                 </li>
+            </ul>
         </div>
     </footer>
 </body>

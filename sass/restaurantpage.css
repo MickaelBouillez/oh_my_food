@@ -253,12 +253,12 @@ body {
     padding: 25px;
   }
 }
-.restaurant__page .head__restaurant .restaurants__icon:active {
+.restaurant__page .head__restaurant .restaurants__icon {
   background-image: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
 }
-.restaurant__page .head__restaurant .fa-regular.fa-heart.fa-xl:active {
+.restaurant__page .head__restaurant .fa-regular.fa-heart.fa-xl {
   font-weight: 900;
 }
 .restaurant__page .menu {
@@ -290,12 +290,16 @@ body {
   padding-bottom: 0.5rem;
 }
 .restaurant__page .menu__list .menu_cards {
+  display: flex;
   border: none;
   background-color: #f9f9f9;
   width: 95%;
   border-radius: 15px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   margin: 0.5rem 0rem;
+}
+.restaurant__page .menu__list .menu_cards .menu_cards--content {
+  width: 100%;
 }
 .restaurant__page .menu__list .menu_cards--title {
   padding-left: 1rem;
@@ -322,11 +326,10 @@ body {
   padding-right: 1rem;
 }
 .restaurant__page .menu__list .menu_cards .menucheck {
-  background: #99e2d0;
+  background-color: #99e2d0;
+  color: #f1f1f1;
   cursor: pointer;
   height: auto;
-  width: 0;
-  opacity: 0;
   border-radius: 0 15px 15px 0;
   display: flex;
   align-items: center;
