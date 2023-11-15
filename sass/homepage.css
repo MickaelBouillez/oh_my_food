@@ -354,18 +354,10 @@ body {
 .restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:hover {
   font-weight: 900;
 }
-.restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:active {
-  font-weight: 900;
-}
 .restaurants__cards a .restaurants__card .card__content--icon {
   padding: 1px;
 }
 .restaurants__cards a .restaurants__card .card__content--icon:hover {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.restaurants__cards a .restaurants__card .card__content--icon:active {
   background-image: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;

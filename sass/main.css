@@ -459,18 +459,10 @@ body {
 .restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:hover {
   font-weight: 900;
 }
-.restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:active {
-  font-weight: 900;
-}
 .restaurants__cards a .restaurants__card .card__content--icon {
   padding: 1px;
 }
 .restaurants__cards a .restaurants__card .card__content--icon:hover {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.restaurants__cards a .restaurants__card .card__content--icon:active {
   background-image: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
@@ -797,13 +789,17 @@ body {
     padding: 25px;
   }
 }
+.restaurant__page .head__restaurant .fa-regular.fa-heart.fa-xl:hover {
+  font-weight: 900;
+}
 .restaurant__page .head__restaurant .restaurants__icon {
+  padding: 2px 0px 0px 0px;
+  margin: 10px;
+}
+.restaurant__page .head__restaurant .restaurants__icon:hover {
   background-image: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
-}
-.restaurant__page .head__restaurant .fa-regular.fa-heart.fa-xl {
-  font-weight: 900;
 }
 .restaurant__page .menu {
   position: relative;
@@ -871,6 +867,7 @@ body {
 }
 .restaurant__page .menu__list .menu_cards .menucheck {
   background-color: #99e2d0;
+  width: 3px;
   color: #f1f1f1;
   cursor: pointer;
   height: auto;
@@ -878,6 +875,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.restaurant__page .menu__list .menu_cards .fa-solid.fa-circle-check {
+  font-size: 20px;
 }
 .restaurant__page .nav-bar__button {
   text-decoration: none;
@@ -1010,7 +1010,7 @@ footer .footer__list a {
   justify-content: center;
   align-items: center;
   z-index: 999;
-  animation: fadeOut 0.5s 2s forwards;
+  animation: fadeOut 0.5s 3.5s forwards;
 }
 
 .loader::before {
@@ -1028,37 +1028,55 @@ footer .footer__list a {
   }
 }
 .loader__content {
-  width: 100px;
-  aspect-ratio: 0.577;
-  clip-path: polygon(0 0, 100% 100%, 0 100%, 100% 0);
+  display: block;
   position: relative;
-  animation: rot 2s infinite linear;
+  height: 32px;
+  width: 150px;
+  box-sizing: border-box;
   overflow: hidden;
+  border: 2px solid #9356DC;
+  border-radius: 20px;
 }
 
 .loader__content:before {
   content: "";
   position: absolute;
-  inset: -150% -150%;
-  background: repeating-conic-gradient(from 30deg, #9356DC 0 60deg, #FF79DA 0 120deg, #99E2D0 0 180deg);
-  animation: inherit;
-  animation-direction: reverse;
+  left: 0;
+  bottom: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #FF79DA;
+  animation: ballbns 3s ease-in-out infinite;
 }
 
-@keyframes rot {
+@keyframes ballbns {
+  0% {
+    left: 0;
+    transform: translateX(0%);
+  }
+  49% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  51% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
   100% {
-    transform: rotate(360deg);
-    display: none;
+    left: 0;
+    transform: translateX(0%);
   }
 }
 .presentation__btn {
   transition: 0.3s;
-  opacity: 0.9;
+  opacity: 0.8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .presentation__btn:hover {
-  transform: scale(1.2);
   opacity: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .functioning__list--btn {
@@ -1079,7 +1097,7 @@ footer .footer__list a {
 }
 
 .card__content--icon:hover {
-  animation: fadeIn 0.2s ease-in-out;
+  animation: fadeIn 0.6s ease-in-out;
   animation-fill-mode: forwards;
 }
 
@@ -1132,4 +1150,8 @@ footer .footer__list a {
     opacity: 1;
     width: 10%;
   }
+}
+.restaurants__icon:hover {
+  animation: fadeIn 0.6s ease-in-out;
+  animation-fill-mode: forwards;
 }

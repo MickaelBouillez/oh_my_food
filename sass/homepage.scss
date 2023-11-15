@@ -271,21 +271,11 @@ body {
                     font-weight: 900;
                 }
 
-                .fa-regular.fa-heart.fa-xl:active {
-                    font-weight: 900;
-                }
-
                 .card__content--icon {
                     padding: 1px;
                 }
 
                 .card__content--icon:hover {
-                    background-image: linear-gradient($second-color, $primary-color);
-                    -webkit-background-clip: text;
-                    color: transparent;
-                }
-
-                .card__content--icon:active {
                     background-image: linear-gradient($second-color, $primary-color);
                     -webkit-background-clip: text;
                     color: transparent;
