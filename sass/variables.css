@@ -83,8 +83,9 @@ footer .footer__list a {
   background-color: #f1f1f1;
 }
 
-.menu__list h4 {
+.menu__list h3 {
   font-family: "Roboto";
+  font-size: 17px;
   color: #585858;
   font-weight: lighter;
 }

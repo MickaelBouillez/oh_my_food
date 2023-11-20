@@ -83,8 +83,9 @@ footer .footer__list a {
   background-color: #f1f1f1;
 }
 
-.menu__list h4 {
+.menu__list h3 {
   font-family: "Roboto";
+  font-size: 17px;
   color: #585858;
   font-weight: lighter;
 }
@@ -198,6 +199,10 @@ body {
     justify-content: center;
   }
 }
+.restaurant__page .restaurant__main h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 27px;
+}
 @media (min-width: 1024px) {
   .restaurant__page .restaurant__main {
     width: 70%;
@@ -286,10 +291,10 @@ body {
   flex-direction: column;
   margin-left: 1rem;
 }
-.restaurant__page .menu__list h4 {
+.restaurant__page .menu__list h3 {
   margin: 1rem 0.5rem;
 }
-.restaurant__page .menu__list h4 span {
+.restaurant__page .menu__list h3 span {
   border-bottom: solid 0.2rem #99E2D0;
   padding-bottom: 0.5rem;
 }

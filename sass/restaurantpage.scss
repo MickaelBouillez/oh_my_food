@@ -90,6 +90,12 @@ body {
     }
 
     .restaurant__main {
+
+        h2 {
+            font-family: "Shrikhand", cursive;
+            font-size: 27px;
+        }
+
         @media (min-width : 1024px) {
             width: 70%;
             justify-content: center;
@@ -179,7 +185,7 @@ body {
         flex-direction: column;
         margin-left: 1rem;
 
-        h4 {
+        h3 {
             margin: 1rem 0.5rem;
 
             span {
