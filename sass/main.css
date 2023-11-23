@@ -63,13 +63,13 @@ input::placeholder {
 
 footer .footer__logo {
   font-family: "Shrikhand", cursive;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
 }
 footer .footer__choice {
   color: white;
   font-family: "Roboto";
-  font-size: 12px;
+  font-size: 16px;
 }
 footer .footer__list a {
   color: white;
@@ -169,13 +169,13 @@ input::placeholder {
 
 footer .footer__logo {
   font-family: "Shrikhand", cursive;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
 }
 footer .footer__choice {
   color: white;
   font-family: "Roboto";
-  font-size: 12px;
+  font-size: 16px;
 }
 footer .footer__list a {
   color: white;
@@ -329,6 +329,7 @@ body {
   }
 }
 .functioning__list--btn span {
+  font-family: "Roboto";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -601,13 +602,13 @@ input::placeholder {
 
 footer .footer__logo {
   font-family: "Shrikhand", cursive;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
 }
 footer .footer__choice {
   color: white;
   font-family: "Roboto";
-  font-size: 12px;
+  font-size: 16px;
 }
 footer .footer__list a {
   color: white;
@@ -868,6 +869,7 @@ body {
   margin-bottom: 0rem;
 }
 .restaurant__page .menu__list .menu_cards--subtitle .cards__price {
+  font-family: "Roboto";
   margin-top: 0rem;
   margin-bottom: 0rem;
   padding-right: 1rem;
@@ -887,6 +889,8 @@ body {
   font-size: 20px;
 }
 .restaurant__page .nav-bar__button {
+  font-family: "Roboto";
+  font-size: 17px;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -966,13 +970,13 @@ input::placeholder {
 
 footer .footer__logo {
   font-family: "Shrikhand", cursive;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
 }
 footer .footer__choice {
   color: white;
   font-family: "Roboto";
-  font-size: 12px;
+  font-size: 16px;
 }
 footer .footer__list a {
   color: white;

@@ -231,6 +231,7 @@ body {
                 }
 
                 & .cards__price {
+                    font-family: "Roboto";
                     margin-top: 0rem;
                     margin-bottom: 0rem;
                     padding-right: 1rem;
@@ -256,6 +257,8 @@ body {
     }
 
     .nav-bar__button {
+        font-family: "Roboto";
+        font-size: 17px;
         text-decoration: none;
         display: flex;
         justify-content: center;
