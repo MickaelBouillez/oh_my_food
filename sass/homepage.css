@@ -7,6 +7,12 @@ h1 {
   font-family: "Roboto";
 }
 
+input::-moz-placeholder {
+  color: black;
+  font-family: "Roboto";
+  font-size: 17px;
+}
+
 input::placeholder {
   color: black;
   font-family: "Roboto";
@@ -63,13 +69,13 @@ input::placeholder {
 
 footer .footer__logo {
   font-family: "Shrikhand", cursive;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
 }
 footer .footer__choice {
   color: white;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 12px;
 }
 footer .footer__list a {
   color: white;
@@ -223,7 +229,6 @@ body {
   }
 }
 .functioning__list--btn span {
-  font-family: "Roboto";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -322,7 +327,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px 10px 0px 0px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 1024px) {
   .restaurants__cards a .restaurants__card img {
@@ -429,4 +435,4 @@ footer .container .footer__choice .footer__list i {
 }
 footer .container .footer__choice .footer__list a {
   text-decoration: none;
-}
+}/*# sourceMappingURL=homepage.css.map */

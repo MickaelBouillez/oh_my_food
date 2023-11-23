@@ -7,6 +7,12 @@ h1 {
   font-family: "Roboto";
 }
 
+input::-moz-placeholder {
+  color: black;
+  font-family: "Roboto";
+  font-size: 17px;
+}
+
 input::placeholder {
   color: black;
   font-family: "Roboto";
@@ -63,13 +69,13 @@ input::placeholder {
 
 footer .footer__logo {
   font-family: "Shrikhand", cursive;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
 }
 footer .footer__choice {
   color: white;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 12px;
 }
 footer .footer__list a {
   color: white;
@@ -102,4 +108,4 @@ footer .footer__list a {
 }
 .menu__list .menu_cards--subtitle .cards__price {
   color: black;
-}
+}/*# sourceMappingURL=variables.css.map */

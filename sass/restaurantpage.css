@@ -63,13 +63,13 @@ input::placeholder {
 
 footer .footer__logo {
   font-family: "Shrikhand", cursive;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
 }
 footer .footer__choice {
   color: white;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 12px;
 }
 footer .footer__list a {
   color: white;
@@ -263,10 +263,13 @@ body {
 }
 .restaurant__page .head__restaurant .restaurants__icon {
   padding: 2px 0px 0px 0px;
-  margin: 10px;
+  margin: 20px;
+  transition: transform 300ms;
 }
 .restaurant__page .head__restaurant .restaurants__icon:hover {
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  transform: scale(1);
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -299,92 +302,78 @@ body {
   padding-bottom: 0.5rem;
 }
 .restaurant__page .menu__list .menu_cards {
-  background-color: white;
-  padding: 0.75rem;
   display: flex;
-  border-radius: 1rem;
-  margin-top: 0.75rem;
-  margin-right: 1rem;
-  margin-bottom: 0.75rem;
-  margin-left: 0px;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  cursor: pointer;
-  max-width: 100%;
+  border: none;
+  background-color: #f9f9f9;
+  width: 95%;
+  border-radius: 17px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem 0rem;
 }
 .restaurant__page .menu__list .menu_cards .menu_cards--content {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex: 1;
+  width: 100%;
 }
 .restaurant__page .menu__list .menu_cards--title {
-  margin: 0px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  padding-left: 1rem;
+  padding-top: 0.7rem;
 }
 .restaurant__page .menu__list .menu_cards--title p {
-  margin: 0px;
-  padding-bottom: 10px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  margin-top: 0rem;
+  margin-bottom: 0.2rem;
 }
 .restaurant__page .menu__list .menu_cards--subtitle {
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.restaurant__page .menu__list .menu_cards--subtitle p {
-  margin: 0px;
-  padding-bottom: 5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.restaurant__page .menu__list .menu_cards .cards__price {
-  font-family: "Roboto";
-  font-weight: bold;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-left: 0.5rem;
-  margin: 0;
-}
-.restaurant__page .menu__list .menu_cards .menucheck {
-  background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 1rem;
-  width: 4rem;
-  display: flex;
+  padding-left: 1rem;
+  padding-bottom: 0.7rem;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  transition-duration: 0.5s;
 }
-.restaurant__page .menu__list .menu_cards .menu_cards:hover .menucheck {
-  margin-right: -1rem;
+.restaurant__page .menu__list .menu_cards--subtitle .cards__subtitle {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
-.restaurant__page .menu__list .menu_cards .menucheck_icon {
-  height: 1.6rem;
-  width: 1.6rem;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
-}
-.restaurant__page .menu__list .menu_cards .menu_cards:hover .menucheck_icon {
-  transform: rotate(0);
+.restaurant__page .menu__list .menu_cards--subtitle .cards__price {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding-right: 1rem;
 }
 .restaurant__page .menu__list .menu_cards .fa-solid.fa-circle-check {
-  color: #99E2D0;
+  color: white;
+  font-size: 30px;
+}
+.restaurant__page .menu_cards .menu_cards--content {
+  width: 100%;
+  padding-left: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.restaurant__page .menu_cards .menu_cards--content .menu_cards--title p,
+.restaurant__page .menu_cards .menu_cards--content .cards__subtitle,
+.restaurant__page .menu_cards .menu_cards--content h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.restaurant__page .menu_cards .menucheck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  width: 0px;
+  border-radius: 0px 15px 15px 0px;
+  transition: all 500ms;
+  opacity: 0;
+}
+.restaurant__page .menu_cards:hover .menucheck {
+  width: 75px;
+  transition: all 500ms;
+  opacity: 1;
+}
+.restaurant__page .menu_cards:hover .menu_cards--content {
+  transition: all 500ms;
 }
 .restaurant__page .nav-bar__button {
-  font-family: "Roboto";
-  font-size: 17px;
   text-decoration: none;
   display: flex;
   justify-content: center;
