@@ -617,6 +617,7 @@ body {
   margin-bottom: 0rem;
   padding-right: 1rem;
   font-weight: bold;
+  font-family: "Roboto";
 }
 .restaurant__page .menu__list .menu_cards .fa-solid.fa-circle-check {
   color: white;
