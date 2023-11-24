@@ -353,17 +353,6 @@ body {
 .restaurants__cards a .restaurants__card--content p {
   margin: 0px;
 }
-.restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:hover {
-  font-weight: 900;
-}
-.restaurants__cards a .restaurants__card .card__content--icon {
-  padding: 1px;
-}
-.restaurants__cards a .restaurants__card .card__content--icon:hover {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  color: transparent;
-}
 
 footer {
   background-color: #2b2b2b;

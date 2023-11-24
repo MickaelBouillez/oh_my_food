@@ -459,17 +459,6 @@ body {
 .restaurants__cards a .restaurants__card--content p {
   margin: 0px;
 }
-.restaurants__cards a .restaurants__card .fa-regular.fa-heart.fa-xl:hover {
-  font-weight: 900;
-}
-.restaurants__cards a .restaurants__card .card__content--icon {
-  padding: 1px;
-}
-.restaurants__cards a .restaurants__card .card__content--icon:hover {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  color: transparent;
-}
 
 footer {
   background-color: #2b2b2b;
@@ -1131,19 +1120,60 @@ footer .footer__list a {
   transform: scale(1.05);
 }
 
-.card__content--icon:hover {
-  animation: fadeIn 0.6s ease-in-out;
-  animation-fill-mode: forwards;
+.card__content--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  cursor: pointer;
+  position: relative;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.fa-regular.fa-heart.fa-xl {
+  opacity: 1;
+  color: black;
+  position: absolute;
 }
+
+.fa-solid.fa-heart.fa-xl {
+  position: absolute;
+  opacity: 0;
+  content: "\f004";
+  font-family: "FontAwesome";
+  font-size: 2em;
+  transition: opacity 1000ms;
+  color: transparent;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.card__content--icon:hover .fa-regular.fa-heart.fa-xl {
+  opacity: 0;
+}
+
+.card__content--icon:hover .fa-solid.fa-heart.fa-xl {
+  opacity: 1;
+  color: transparent;
+}
+
+.restaurants__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.restaurants__icon:hover .fa-regular.fa-heart.fa-xl {
+  opacity: 0;
+}
+
+.restaurants__icon:hover .fa-solid.fa-heart.fa-xl {
+  opacity: 1;
+}
+
 .box {
   animation: appear 1s forwards;
   opacity: 0;
