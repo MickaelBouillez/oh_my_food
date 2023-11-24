@@ -1,7 +1,23 @@
 @import "variables";
+@import "animation";
 
 body {
   margin: 0px;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem;
+
+  @media (min-width : 1024px) {
+    font-size: 35px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 30px;
+  }
+
 }
 
 .logo_and_back {
@@ -223,6 +239,7 @@ body {
           margin-top: 0rem;
           margin-bottom: 0rem;
           padding-right: 1rem;
+          font-weight: bold;
         }
       }
 
@@ -288,5 +305,89 @@ body {
       background: linear-gradient($second-color, $primary-color);
       border-radius: 30px;
     }
+  }
+}
+
+footer {
+  background-color: $bg-color3;
+  padding: 0.5rem 0rem;
+
+  @media (min-width : 1024px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .container {
+    @media (min-width : 1024px) {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 3rem 3rem 1rem 1rem;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 70%;
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 3rem 3rem 1rem 1rem;
+    }
+
+    .footer__logo {
+      margin: 0.5rem 1rem;
+    }
+
+    .footer__choice {
+      margin: 0px;
+      padding: 0.5rem 1rem;
+      list-style-type: none;
+
+      @media (min-width : 1024px) {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+      }
+
+      .footer__list {
+        margin: 3px 0px;
+
+        i {
+          margin-right: 5px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.card__btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 30px;
+
+  @media (min-width : 1024px) {
+    position: relative;
+    right: -30px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    position: relative;
+    right: -30px;
   }
 }

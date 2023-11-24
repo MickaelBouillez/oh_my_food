@@ -103,32 +103,43 @@
   transform: scale(1.05);
 }
 
-/////////////////////////////////////////////
-.card__btn {
-  position: relative;
-  right: 30px;
-}
-
-.card__like {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.3s ease;
-}
-
-.menu__like--bg {
-  opacity: 0;
-  color: $primary-color;
-}
-
-.card__btn:hover .menu__like--bg {
+////////////////////////////////////////////
+.fa-regular.fa-heart {
   opacity: 1;
+  z-index: 2;
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
+
+  &:active {
+    opacity: 0;
+  }
 }
 
-.restaurants__icon {
-  position: relative;
-}
+.fa-solid.fa-heart {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  background: linear-gradient(360deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
 
+  &:hover {
+    opacity: 1;
+    transition: all 0.3s linear 0s;
+  }
+
+  &:not(:hover) {
+    opacity: 0;
+    transition: all 0.600s linear 0s;
+  }
+
+}
 
 ////////////////////////////////////////
 .box {
