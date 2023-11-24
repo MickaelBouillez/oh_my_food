@@ -136,31 +136,22 @@ body {
 
       @media (min-width: 1024px) {
         justify-content: center;
-        padding: 25px;
       }
 
       @media (min-width: 768px) and (max-width: 1024px) {
         justify-content: center;
-        padding: 25px;
       }
-    }
 
-    .fa-regular.fa-heart.fa-xl:hover {
-      font-weight: 900;
-    }
+      .fa-regular,
+      .fa-solid {
+        @media (min-width: 1024px) {
+          padding-left: 20px;
+        }
 
-    .restaurants__icon {
-      padding: 2px 0px 0px 0px;
-      margin: 20px;
-      transition: transform 300ms;
-    }
-
-    .restaurants__icon:hover {
-      transform: scale(1);
-      background: linear-gradient(#9356dc, #ff79da);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
+        @media (min-width: 768px) and (max-width: 1024px) {
+          padding-left: 20px;
+        }
+      }
     }
   }
 

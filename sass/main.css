@@ -777,29 +777,24 @@ body {
 @media (min-width: 1024px) {
   .restaurant__page .head__restaurant .restaurants__icon {
     justify-content: center;
-    padding: 25px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .restaurant__page .head__restaurant .restaurants__icon {
     justify-content: center;
-    padding: 25px;
   }
 }
-.restaurant__page .head__restaurant .fa-regular.fa-heart.fa-xl:hover {
-  font-weight: 900;
+@media (min-width: 1024px) {
+  .restaurant__page .head__restaurant .restaurants__icon .fa-regular,
+  .restaurant__page .head__restaurant .restaurants__icon .fa-solid {
+    padding-left: 20px;
+  }
 }
-.restaurant__page .head__restaurant .restaurants__icon {
-  padding: 2px 0px 0px 0px;
-  margin: 20px;
-  transition: transform 300ms;
-}
-.restaurant__page .head__restaurant .restaurants__icon:hover {
-  transform: scale(1);
-  background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .restaurant__page .head__restaurant .restaurants__icon .fa-regular,
+  .restaurant__page .head__restaurant .restaurants__icon .fa-solid {
+    padding-left: 20px;
+  }
 }
 .restaurant__page .menu {
   position: relative;
@@ -1120,58 +1115,29 @@ footer .footer__list a {
   transform: scale(1.05);
 }
 
-.card__content--icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 16px;
-  cursor: pointer;
+.card__btn {
   position: relative;
+  right: 30px;
 }
 
-.fa-regular.fa-heart.fa-xl {
-  opacity: 1;
-  color: black;
+.card__like {
   position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
 }
 
-.fa-solid.fa-heart.fa-xl {
-  position: absolute;
+.menu__like--bg {
   opacity: 0;
-  content: "\f004";
-  font-family: "FontAwesome";
-  font-size: 2em;
-  transition: opacity 1000ms;
-  color: transparent;
-  background: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: #9356DC;
 }
 
-.card__content--icon:hover .fa-regular.fa-heart.fa-xl {
-  opacity: 0;
-}
-
-.card__content--icon:hover .fa-solid.fa-heart.fa-xl {
+.card__btn:hover .menu__like--bg {
   opacity: 1;
-  color: transparent;
 }
 
 .restaurants__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 16px;
-  cursor: pointer;
   position: relative;
-}
-
-.restaurants__icon:hover .fa-regular.fa-heart.fa-xl {
-  opacity: 0;
-}
-
-.restaurants__icon:hover .fa-solid.fa-heart.fa-xl {
-  opacity: 1;
 }
 
 .box {
@@ -1196,11 +1162,6 @@ footer .footer__list a {
     opacity: 1;
   }
 }
-.restaurants__icon:hover {
-  animation: fadeIn 0.6s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
 .nav-bar__btn {
   transition: 0.3s;
   opacity: 1;

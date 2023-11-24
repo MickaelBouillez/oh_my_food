@@ -249,29 +249,24 @@ body {
 @media (min-width: 1024px) {
   .restaurant__page .head__restaurant .restaurants__icon {
     justify-content: center;
-    padding: 25px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .restaurant__page .head__restaurant .restaurants__icon {
     justify-content: center;
-    padding: 25px;
   }
 }
-.restaurant__page .head__restaurant .fa-regular.fa-heart.fa-xl:hover {
-  font-weight: 900;
+@media (min-width: 1024px) {
+  .restaurant__page .head__restaurant .restaurants__icon .fa-regular,
+  .restaurant__page .head__restaurant .restaurants__icon .fa-solid {
+    padding-left: 20px;
+  }
 }
-.restaurant__page .head__restaurant .restaurants__icon {
-  padding: 2px 0px 0px 0px;
-  margin: 20px;
-  transition: transform 300ms;
-}
-.restaurant__page .head__restaurant .restaurants__icon:hover {
-  transform: scale(1);
-  background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .restaurant__page .head__restaurant .restaurants__icon .fa-regular,
+  .restaurant__page .head__restaurant .restaurants__icon .fa-solid {
+    padding-left: 20px;
+  }
 }
 .restaurant__page .menu {
   position: relative;

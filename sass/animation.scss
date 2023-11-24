@@ -104,61 +104,31 @@
 }
 
 /////////////////////////////////////////////
-
-.card__content--icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 16px;
-  cursor: pointer;
+.card__btn {
   position: relative;
+  right: 30px;
 }
 
-.fa-regular.fa-heart.fa-xl {
-  opacity: 1;
-  color: black;
+.card__like {
   position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
 }
 
-.fa-solid.fa-heart.fa-xl {
-  position: absolute;
+.menu__like--bg {
   opacity: 0;
-  content: '\f004';
-  font-family: 'FontAwesome';
-  font-size: 2em;
-  transition: opacity 1000ms;
-  color: transparent;
-  background: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: $primary-color;
 }
 
-.card__content--icon:hover .fa-regular.fa-heart.fa-xl {
-  opacity: 0;
-}
-
-.card__content--icon:hover .fa-solid.fa-heart.fa-xl {
+.card__btn:hover .menu__like--bg {
   opacity: 1;
-  color: transparent;
 }
-
 
 .restaurants__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 16px;
-  cursor: pointer;
   position: relative;
 }
 
-.restaurants__icon:hover .fa-regular.fa-heart.fa-xl {
-  opacity: 0;
-}
-
-.restaurants__icon:hover .fa-solid.fa-heart.fa-xl {
-  opacity: 1;
-}
 
 ////////////////////////////////////////
 .box {
@@ -184,12 +154,6 @@
   }
 }
 
-//retrait anim
-
-.restaurants__icon:hover {
-  animation: fadeIn 0.6s ease-in-out;
-  animation-fill-mode: forwards;
-}
 
 .nav-bar__btn {
   transition: 0.3s;
